@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#F4F9FD"/>
+  <path d="M0 540 C150 510 300 570 450 540 S750 510 900 540 1050 570 1200 540 V630 H0 Z" fill="#D6EAF8"/>
+  <g fill="none" stroke="#1B6CA8" stroke-opacity="0.35" stroke-width="3">
+    <circle cx="1080" cy="120" r="14"/><circle cx="1120" cy="200" r="8"/><circle cx="1050" cy="260" r="20"/>
+    <circle cx="1140" cy="330" r="10"/><circle cx="1160" cy="400" r="6"/>
+  </g>
+  <g transform="translate(80 70) scale(2.6)">
+    <g stroke="#0B2545" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M22 34 C15 27 10 19 6 15 C1 25 1 43 6 53 C10 49 15 41 22 34 Z" fill="#1B6CA8"/>
+      <path d="M18 34 L6 23 M17 34 L4 34 M18 34 L6 45" fill="none" stroke="#D6EAF8" stroke-width="2"/>
+      <path d="M27 24 C28 13 36 11 42 20" fill="#1B6CA8"/>
+      <path d="M32 48 C31 56 38 58 42 49" fill="#1B6CA8"/>
+      <path d="M43 20 L46 9" fill="none"/>
+      <circle cx="46.5" cy="7.5" r="3.2" fill="#FF7A1A"/>
+      <ellipse cx="38" cy="35" rx="20" ry="16" fill="#FF7A1A"/>
+      <circle cx="45" cy="31" r="8" fill="#FFFFFF"/>
+      <circle cx="46.5" cy="32" r="4.3" fill="#0B2545" stroke="none"/>
+      <circle cx="44.8" cy="30.2" r="1.7" fill="#FFFFFF" stroke="none"/>
+      <path d="M47 42 C50 44.5 53 44 55 41" fill="none"/>
+    </g>
+  </g
+  ><text x="270" y="190" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="72" font-weight="800" letter-spacing="-2" fill="#0B2545">guppy <tspan fill="#E8650A">ai</tspan></text>
+  <text x="80" y="340" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="58" font-weight="800" letter-spacing="-1.5" fill="#0B2545">Nobody knows what's under the surface.</text>
+  <text x="80" y="415" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="58" font-weight="800" letter-spacing="-1.5" fill="#B84A09">Guppy AI doesn't either, but at scale.</text>
+  <text x="80" y="490" font-family="Menlo, 'JetBrains Mono', monospace" font-size="24" fill="#1B6CA8">// cast your net of agents · guppyai.app · a satire site</text>
+</svg>

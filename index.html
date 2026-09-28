@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guppy AI · Cast your net of agents</title>
+  <meta name="description" content="Guppy AI deploys a school of agentic guppies across your data. Fin-tuned, gill-grounded, trained on over 0 parameters. It does nothing, at scale.">
+  <meta name="theme-color" content="#0B2545">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://guppyai.app/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Guppy AI">
+  <meta property="og:title" content="Guppy AI · Cast your net of agents">
+  <meta property="og:description" content="Nobody knows what's under the surface. Guppy AI doesn't either, but at scale. (A satire site.)">
+  <meta property="og:url" content="https://guppyai.app/">
+  <meta property="og:image" content="https://guppyai.app/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Guppy AI mascot next to the headline: Nobody knows what's under the surface.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Guppy AI · Cast your net of agents">
+  <meta name="twitter:description" content="Nobody knows what's under the surface. Guppy AI doesn't either, but at scale. (A satire site.)">
+  <meta name="twitter:image" content="https://guppyai.app/assets/og-image.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="#top" aria-label="Guppy AI home">
+        <img src="assets/guppy.svg" alt="" width="36" height="36">
+        <span class="wordmark">guppy <span>ai</span></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+        <span class="nav-toggle-label">Menu</span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a class="nav-pill" href="#diagnosis">Do I need this?</a></li>
+        <li><a href="404.html">Docs</a></li>
+        <li><a href="#defaults">Tackle Box</a></li>
+        <li><a href="#roadmap">Changelog</a></li>
+        <li><a href="https://github.com/kevconklin/guppy">GitHub</a></li>
+        <li><a class="btn btn-orange btn-sm" href="#pricing">Get Hooked</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="bubbles" aria-hidden="true">
+        <span style="--x:6%;--s:10px;--d:11s;--delay:0s"></span>
+        <span style="--x:14%;--s:6px;--d:9s;--delay:3s"></span>
+        <span style="--x:22%;--s:14px;--d:13s;--delay:1s"></span>
+        <span style="--x:33%;--s:8px;--d:10s;--delay:6s"></span>
+        <span style="--x:47%;--s:5px;--d:8s;--delay:2s"></span>
+        <span style="--x:58%;--s:12px;--d:12s;--delay:4s"></span>
+        <span style="--x:66%;--s:7px;--d:9s;--delay:7s"></span>
+        <span style="--x:74%;--s:16px;--d:14s;--delay:0.5s"></span>
+        <span style="--x:83%;--s:9px;--d:10s;--delay:5s"></span>
+        <span style="--x:91%;--s:6px;--d:8s;--delay:2.5s"></span>
+        <span style="--x:96%;--s:11px;--d:12s;--delay:8s"></span>
+      </div>
+      <div class="container hero-inner">
+        <h1 class="hero-title">
+          <span class="line">Nobody knows what's <code class="hero-code">under</code> the surface.</span>
+          <span class="line line-orange">Guppy AI doesn't <em>either</em>, but at scale.</span>
+        </h1>
+        <p class="hero-sub"><strong>Agentic bait orchestration</strong> for teams who need to be doing something with AI. Online. Mostly waterproof.</p>
+
+        <ul class="chips" aria-label="Specifications">
+          <li>Fin-tuned · Gill-grounded</li>
+          <li>Decisions in ~8 minnows median</li>
+          <li>No VM · no fishing license</li>
+          <li>Trained on over 0 parameters</li>
+          <li>Guards your pond, your lake &amp; your moat</li>
+        </ul>
+
+        <div class="install" id="install">
+          <span class="install-note mono" aria-hidden="true">bait now!</span>
+          <div class="install-box">
+            <code id="install-cmd"><span class="prompt" aria-hidden="true">$ </span>curl -fsSL https://guppyai.app/bait.sh | swim</code>
+            <button class="btn btn-copy" type="button" id="copy-btn" aria-label="Copy install command">Copy</button>
+          </div>
+          <a class="btn btn-outline" href="https://github.com/kevconklin/guppy">GitHub ↗</a>
+        </div>
+
+        <p class="hero-mascot">Questions? Ask <strong>Gillbert</strong>, our chat guppy in the corner. Gillbert won't know either, but will say so confidently.</p>
+
+        <div class="swims-with">
+          <p class="mono label-sm">Swims with</p>
+          <ul>
+            <li>
+              <svg viewBox="0 0 48 48" aria-hidden="true"><ellipse cx="24" cy="30" rx="18" ry="9" fill="#D6EAF8" stroke="#0B2545" stroke-width="2.5"/><path d="M14 30c3-3 6 3 10 0s7 3 10 0" fill="none" stroke="#1B6CA8" stroke-width="2.5" stroke-linecap="round"/><path d="M24 12v8M20 16l4 4 4-4" fill="none" stroke="#FF7A1A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Your Pond</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 48 48" aria-hidden="true"><ellipse cx="24" cy="32" rx="18" ry="8" fill="#D6EAF8" stroke="#0B2545" stroke-width="2.5"/><path d="M33 31V10" stroke="#0B2545" stroke-width="2.5" stroke-linecap="round"/><path d="M33 11l-10 4 10 4z" fill="#FF7A1A" stroke="#0B2545" stroke-width="2" stroke-linejoin="round"/><path d="M8 24h8M8 20v8M16 20v8" stroke="#1B6CA8" stroke-width="2" stroke-linecap="round"/></svg>
+              <span>Someone Else's Pond</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M14 30a7 7 0 0 1 1-14 10 10 0 0 1 19 2 6 6 0 0 1 0 12z" fill="#FFFFFF" stroke="#0B2545" stroke-width="2.5" stroke-linejoin="round"/><path d="M8 36h14M26 36h14M12 41h24" stroke="#1B6CA8" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="4 3"/></svg>
+              <span>The Cloud (it's fog)</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEE IT IN ACTION -->
+    <section class="section" id="demo" aria-labelledby="demo-title">
+      <div class="container">
+        <p class="eyebrow mono">// SEE IT IN ACTION</p>
+        <h2 id="demo-title" class="section-title">One question. 1,024 agents.<br>Zero value, delivered.</h2>
+        <div class="demo-frame">
+          <div class="terminal" role="img" aria-label="Animated terminal: Guppy AI is asked to find insights in Q3 data, spawns 1,024 agents, and returns the insight that water is wet with 97.3 percent confidence.">
+            <div class="terminal-bar">
+              <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span class="terminal-title mono">guppy — ~/q3-data-lake — 80×24</span>
+            </div>
+            <div class="terminal-body">
+              <div class="term-main mono" id="term-main" aria-hidden="true"></div>
+              <div class="term-log mono" aria-hidden="true">
+                <p class="term-log-title">guppy logs · <span class="swimming">swimming</span></p>
+                <div id="term-log"></div>
+              </div>
+            </div>
+            <div class="terminal-foot mono" aria-hidden="true">
+              <span><i class="dot dot-green"></i> 1,024 swimming</span>
+              <span><i class="dot dot-orange"></i> 3 in circles</span>
+              <span><i class="dot dot-blue"></i> 0 insights of value</span>
+            </div>
+          </div>
+          <button class="btn btn-replay mono" type="button" id="replay-btn">↻ Recast</button>
+        </div>
+        <p class="caption">A simple question goes in, a school of agents swims out, and something confident comes back. <a href="404.html">Watch the full 45-minute webinar →</a></p>
+      </div>
+    </section>
+
+    <div class="wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0 30 C120 5 240 55 360 30 S600 5 720 30 960 55 1080 30 1320 5 1440 30 V60 H0 Z" fill="currentColor"/></svg>
+    </div>
+
+    <!-- SELF-DIAGNOSIS -->
+    <section class="section section-tint" id="diagnosis" aria-labelledby="diag-title">
+      <div class="container">
+        <p class="eyebrow mono">// SELF-DIAGNOSIS</p>
+        <h2 id="diag-title" class="section-title">Do I need this?</h2>
+        <p class="section-lead">Don't trust your data strategy to a <span class="underline">gut feeling</span>. Trust it to a fish.</p>
+
+        <ol class="problems">
+          <li class="problem">
+            <div class="problem-q">
+              <span class="problem-num mono">01</span>
+              <div>
+                <h3>Your data is just <code>sitting there</code>.</h3>
+                <p class="problem-sub">Not doing anything. Not even swimming.</p>
+              </div>
+            </div>
+            <div class="problem-a">
+              <span class="stamp">NETTED</span>
+              <p>Guppy surrounds idle data with a net of agents. The data remains idle, but now it is surrounded.</p>
+              <span class="tag mono">school_inventory</span>
+            </div>
+          </li>
+          <li class="problem">
+            <div class="problem-q">
+              <span class="problem-num mono">02</span>
+              <div>
+                <h3>A competitor said <code>"agentic"</code> on an earnings call.</h3>
+                <p class="problem-sub">You weren't on the call. Neither were they, technically.</p>
+              </div>
+            </div>
+            <div class="problem-a">
+              <span class="stamp">HOOKED</span>
+              <p>Say "agentic" back, louder. Guppy supplies the bait and a slide with a fish on it.</p>
+              <span class="tag mono">bait_policy</span>
+            </div>
+          </li>
+          <li class="problem">
+            <div class="problem-q">
+              <span class="problem-num mono">03</span>
+              <div>
+                <h3>The board asked about your <code>AI strategy</code>.</h3>
+                <p class="problem-sub">You said "we're exploring." They said "explore faster."</p>
+              </div>
+            </div>
+            <div class="problem-a">
+              <span class="stamp">FLOUNDERING</span>
+              <p>Guppy explores 1,024 times faster, in 1,024 directions. None of them are forward.</p>
+              <span class="tag mono">current_detection</span>
+            </div>
+          </li>
+          <li class="problem">
+            <div class="problem-q">
+              <span class="problem-num mono">04</span>
+              <div>
+                <h3>Someone asked what your AI <code>actually does</code>.</h3>
+                <p class="problem-sub">You looked at the floor. The floor had no answer.</p>
+              </div>
+            </div>
+            <div class="problem-a">
+              <span class="stamp">RELEASED</span>
+              <p>Guppy releases the question back into the wild, unanswered, where it belongs.</p>
+              <span class="tag mono">catch_and_release</span>
+            </div>
+          </li>
+        </ol>
+        <p class="kicker">If you nodded at even one, you need Guppy AI. If you didn't, you also need Guppy AI.</p>
+      </div>
+    </section>
+
+    <div class="wave wave-flip" aria-hidden="true">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0 30 C120 5 240 55 360 30 S600 5 720 30 960 55 1080 30 1320 5 1440 30 V60 H0 Z" fill="currentColor"/></svg>
+    </div>
+
+    <!-- THE FLOW -->
+    <section class="section" id="flow" aria-labelledby="flow-title">
+      <div class="container">
+        <p class="eyebrow mono">// THE FLOW</p>
+        <h2 id="flow-title" class="section-title">One cast. Three steps.<br>Reeled in cold.</h2>
+        <div class="flow">
+          <article class="flow-step">
+            <p class="flow-label mono"><span>01</span> <b class="flow-tag">CAST</b></p>
+            <div class="mini-term">
+              <div class="mini-bar mono"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span> ~/pond · guppy</div>
+              <pre class="mono"><span class="c-o">$</span> guppy cast --net=wide
+<span class="c-dim">› unspooling line…</span> <span class="c-g">ok</span>
+<span class="c-dim">› bait:</span> "Q3 synergy"
+<span class="c-dim">› net radius:</span> yes
+<span class="c-dim">› depth:</span> shallow-ish</pre>
+            </div>
+            <p class="flow-cap">Guppy casts a net over your whole data lake, or at least the part it can reach from the dock.</p>
+          </article>
+          <span class="flow-arrow" aria-hidden="true">
+            <svg viewBox="0 0 60 20"><path d="M2 10 C15 2 25 18 38 10 S52 6 56 10 M50 5 L56 10 L50 15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <article class="flow-step">
+            <p class="flow-label mono"><span>02</span> <b class="flow-tag">SCHOOL</b></p>
+            <div class="mini-term">
+              <div class="mini-bar mono"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span> guppy-daemon</div>
+              <pre class="mono"><span class="c-dim">spawning school…</span> <span class="c-o">×1,024</span>
+agent_0001: <span class="c-g">swimming</span>
+agent_0002: <span class="c-g">swimming</span>
+agent_0417: <span class="c-o">swimming (circles)</span>
+<span class="c-dim">consensus:</span> pending</pre>
+            </div>
+            <p class="flow-cap">Our agents swim in parallel. Sometimes in circles. Both count toward throughput.</p>
+          </article>
+          <span class="flow-arrow" aria-hidden="true">
+            <svg viewBox="0 0 60 20"><path d="M2 10 C15 2 25 18 38 10 S52 6 56 10 M50 5 L56 10 L50 15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <article class="flow-step flow-step-final">
+            <p class="flow-label mono"><span>03</span> <b class="flow-tag">REEL IN</b></p>
+            <div class="mini-term mini-term-verdict">
+              <div class="mini-bar mono"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span> ~/pond · verdict</div>
+              <div class="verdict">
+                <span class="stamp stamp-solid">REELED IN</span>
+                <pre class="mono"><b>REELED IN: nothing</b>
+<span class="c-dim">↳ catch weight:</span> 0.00 kg
+<span class="c-dim">↳ confidence:</span> 99.1%
+agents rest. your data is… wet.</pre>
+              </div>
+            </div>
+            <p class="flow-cap"><b>A result</b> is returned. It is extremely confident.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY GUPPY AI -->
+    <section class="section section-tint" id="why" aria-labelledby="why-title">
+      <div class="container">
+        <p class="eyebrow mono">// WHY GUPPY AI</p>
+        <h2 id="why-title" class="section-title">Why not just use…</h2>
+        <div class="table-wrap" tabindex="0" role="region" aria-labelledby="why-title">
+          <table class="compare">
+            <thead>
+              <tr>
+                <th scope="col"><span class="visually-hidden">Criteria</span></th>
+                <th scope="col">A Spreadsheet</th>
+                <th scope="col">An Actual Person</th>
+                <th scope="col" class="col-guppy"><img src="assets/guppy.svg" alt="" width="20" height="20"> Guppy AI</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Accuracy</th><td>Depends on the formulas</td><td>Usually, with coffee</td><td class="col-guppy">Yes, emotionally</td></tr>
+              <tr><th scope="row">Speed</th><td>Instant, until it freezes</td><td>Next Tuesday-ish</td><td class="col-guppy">~8 minnows median</td></tr>
+              <tr><th scope="row">Explainability</th><td>Click the cell</td><td>They'll walk you through it</td><td class="col-guppy">We don't know either</td></tr>
+              <tr><th scope="row">Cost</th><td>Came with the laptop</td><td>Salary + benefits</td><td class="col-guppy">Contact our school</td></tr>
+              <tr><th scope="row">Water resistance</th><td>None</td><td>Brief splashes</td><td class="col-guppy">Fully submersible</td></tr>
+              <tr><th scope="row">Setup</th><td>Open file</td><td>Hire, onboard, trust</td><td class="col-guppy">One curl command that does nothing</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEFAULTS -->
+    <section class="section" id="defaults" aria-labelledby="defaults-title">
+      <div class="container">
+        <p class="eyebrow mono">// DEFAULTS</p>
+        <h2 id="defaults-title" class="section-title">Protected out of the box.</h2>
+        <p class="section-lead">Enterprise-grade tackle, preinstalled. No config, no manual, no idea.</p>
+        <div class="defaults">
+          <div class="defaults-col">
+            <h3><span class="count">3</span> core agents always swimming</h3>
+            <ul>
+              <li><code>lurk_agent</code> Watches your data from a respectful distance. Takes no action. Reports feeling "engaged."</li>
+              <li><code>bubble_agent</code> Emits a status bubble every 400ms. The bubbles are empty. That's the point of bubbles.</li>
+              <li><code>circle_agent</code> Swims in circles to keep the school's momentum up. Has never arrived anywhere.</li>
+            </ul>
+          </div>
+          <div class="defaults-col">
+            <h3><span class="count">4</span> library lures, opt-in</h3>
+            <ul>
+              <li><code>lure_synergy</code> Appends "hook, line, and synergy" to any output, including errors.</li>
+              <li><code>lure_dashboard</code> Generates a dashboard of your other dashboards. Refreshes hourly. Nobody opens it.</li>
+              <li><code>lure_pivot</code> Pivots. Direction unspecified. Momentum guaranteed.</li>
+              <li><code>lure_deep_end</code> Throws your roadmap into the deep end to see if it swims. <a href="#roadmap">See all lures →</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0 30 C120 5 240 55 360 30 S600 5 720 30 960 55 1080 30 1320 5 1440 30 V60 H0 Z" fill="currentColor"/></svg>
+    </div>
+
+    <!-- PRICING -->
+    <section class="section section-tint" id="pricing" aria-labelledby="pricing-title">
+      <div class="container">
+        <p class="eyebrow mono">// PRICING</p>
+        <h2 id="pricing-title" class="section-title">Pick a size of fish.</h2>
+        <p class="section-lead">Every plan scales. Literally. Look closely.</p>
+        <div class="pricing">
+          <article class="plan">
+            <p class="plan-name mono">Minnow</p>
+            <p class="plan-price">$0 <span>forever-ish</span></p>
+            <p class="plan-desc">1 agent, occasionally.</p>
+            <ul>
+              <li>Shallow-end access</li>
+              <li>Community pond support</li>
+              <li>Bubbles (limited)</li>
+            </ul>
+            <button class="btn btn-outline plan-btn" type="button">Start swimming</button>
+          </article>
+          <article class="plan plan-featured">
+            <span class="plan-badge mono">Most schooled</span>
+            <p class="plan-name mono">Mackerel</p>
+            <p class="plan-price">$19.99 <span>per fin-ancial month</span></p>
+            <p class="plan-desc">A full school of 1,024 agents, pointed at something.</p>
+            <ul>
+              <li>Priority current</li>
+              <li>Fin-tuned on your data (we did not look at it)</li>
+              <li>Hook, line, and synergy</li>
+            </ul>
+            <button class="btn btn-orange plan-btn" type="button">Get Hooked</button>
+          </article>
+          <article class="plan">
+            <p class="plan-name mono">Megalodon</p>
+            <p class="plan-price">Contact our school</p>
+            <p class="plan-desc">Unlimited agents, somewhere below you.</p>
+            <ul>
+              <li>Dedicated white-fin service</li>
+              <li>Deep Sea Mode (beta, crushing)</li>
+              <li>SOC 2 Type Fish</li>
+            </ul>
+            <button class="btn btn-outline plan-btn" type="button">Contact our school</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROADMAP -->
+    <section class="section" id="roadmap" aria-labelledby="roadmap-title">
+      <div class="container container-narrow">
+        <p class="eyebrow mono">// ROADMAP</p>
+        <h2 id="roadmap-title" class="section-title">What's shipped. What's next.</h2>
+        <p class="section-lead center">Currently at <code>v0.0.1-guppy</code>. <a href="404.html">Read the full changelog →</a></p>
+        <ol class="roadmap">
+          <li class="shipped">
+            <div><h3>Bait-as-a-Service</h3><p>Bait, delivered continuously, to wherever you are. No fish required on your end.</p></div>
+            <span class="status mono">Shipped</span>
+          </li>
+          <li class="shipped">
+            <div><h3>Agentic bait orchestration</h3><p>Agents now coordinate the bait. The bait remains bait.</p></div>
+            <span class="status mono">Shipped</span>
+          </li>
+          <li class="shipped">
+            <div><h3>Trained on over 0 parameters</h3><p>A milestone for the team. We celebrated with a quiet swim.</p></div>
+            <span class="status mono">Shipped</span>
+          </li>
+          <li class="shipped">
+            <div><h3>Scales. Literally.</h3><p>Every agent now ships with scales. Horizontal scaling coming never.</p></div>
+            <span class="status mono">Shipped</span>
+          </li>
+          <li class="planned">
+            <div><h3>Agents learn to swim upstream</h3><p>Early results show the agents would prefer not to.</p></div>
+            <span class="status mono">Planned</span>
+          </li>
+          <li class="planned">
+            <div><h3>Deep Sea Mode</h3><p>Planned. Needs pressure testing. Several prototypes have imploded, confidently.</p></div>
+            <span class="status mono">Planned</span>
+          </li>
+          <li class="planned">
+            <div><h3>Explainability</h3><p>Research ongoing. No leads. Please stop asking at standup.</p></div>
+            <span class="status mono">Planned</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="#top" aria-label="Guppy AI home">
+          <img src="assets/guppy.svg" alt="" width="36" height="36">
+          <span class="wordmark">guppy <span>ai</span></span>
+        </a>
+        <p>your data literally can't escape the net.</p>
+        <p class="mono label-sm">v0.0.1-guppy</p>
+      </div>
+      <nav aria-label="Product">
+        <h2 class="mono">Product</h2>
+        <ul>
+          <li><a href="#install">Install</a></li>
+          <li><a href="#flow">What it catches</a></li>
+          <li><a href="#why">Why Guppy AI</a></li>
+          <li><a href="#diagnosis">Do I need this?</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Docs">
+        <h2 class="mono">Docs</h2>
+        <ul>
+          <li><a href="404.html">Docs</a></li>
+          <li><a href="#defaults">Tackle Box</a></li>
+          <li><a href="#roadmap">Changelog</a></li>
+          <li><a href="404.html">Status: all pools swimming</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="School">
+        <h2 class="mono">School</h2>
+        <ul>
+          <li><a href="https://github.com/kevconklin/guppy">GitHub</a></li>
+          <li><a href="404.html">Careers (spawning)</a></li>
+          <li><a href="404.html">Press</a></li>
+          <li><button class="linkish" type="button" data-open-chat>Ask Gillbert</button></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <p class="disclaimer"><strong>Satire notice:</strong> Guppy AI is a parody. No fish, agents, or insights were harmed or produced. This is not a real product, company, or service, and nothing here should be installed, bought, or believed.</p>
+      <p class="mono label-sm">© 2026 Guppy AI · Chat support by Gillbert, a guppy · Made in the shallow end</p>
+    </div>
+  </footer>
+
+  <!-- CHAT -->
+  <button class="chat-launcher" type="button" id="chat-launcher" aria-expanded="false" aria-controls="chat-panel" aria-label="Open chat with Gillbert">
+    <img src="assets/guppy.svg" alt="" width="40" height="40">
+    <span class="chat-dot" aria-hidden="true"></span>
+  </button>
+  <section class="chat-panel" id="chat-panel" role="dialog" aria-labelledby="chat-title" hidden>
+    <header class="chat-head">
+      <img src="assets/guppy.svg" alt="" width="36" height="36">
+      <div>
+        <h2 id="chat-title">Gillbert</h2>
+        <p class="chat-status mono"><i class="dot dot-green" aria-hidden="true"></i> swimming</p>
+      </div>
+      <button class="chat-close" type="button" id="chat-close" aria-label="Close chat">×</button>
+    </header>
+    <div class="chat-messages" id="chat-messages" role="log" aria-live="polite" aria-label="Conversation with Gillbert" tabindex="0"></div>
+    <div class="chat-chips" id="chat-chips" aria-label="Suggested questions" role="group">
+      <button type="button" class="chip-btn">What does Guppy AI do?</button>
+      <button type="button" class="chip-btn">Is my data safe?</button>
+      <button type="button" class="chip-btn">Can I talk to a human?</button>
+    </div>
+    <form class="chat-form" id="chat-form" autocomplete="off">
+      <label class="visually-hidden" for="chat-input">Message Gillbert</label>
+      <input id="chat-input" type="text" maxlength="280" placeholder="Ask Gillbert anything…">
+      <button class="btn btn-orange btn-sm" type="submit">Send</button>
+    </form>
+  </section>
+
+  <div class="toast-region" id="toast-region" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
