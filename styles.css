@@ -661,6 +661,9 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   color: var(--white);
 }
 .disclaimer strong { color: var(--orange); }
+.coffee { font-size: 15px; }
+.footer .coffee a { color: var(--orange); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+.footer .coffee a:hover { color: var(--white); }
 
 /* ---------- Chat ---------- */
 .chat-launcher {

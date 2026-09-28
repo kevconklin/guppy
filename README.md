@@ -32,6 +32,10 @@ python3 -m http.server 8000
 
 Then open http://localhost:8000.
 
+## Support
+
+If Guppy AI made you laugh, you can [buy me a coffee](https://buymeacoffee.com/kevconklin). ☕
+
 ## Disclaimer
 
 Guppy AI is a parody of vague AI marketing as a genre. It doesn't refer to, quote or impersonate any real company or person. No fish, agents, or insights were harmed or produced.
