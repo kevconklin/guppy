@@ -15,6 +15,9 @@ A static site with no framework, no build step and no dependencies, served by Gi
 | `index.html` | The landing page |
 | `styles.css` | All styles (CSS custom properties on `:root`) |
 | `script.js` | Copy button, toasts, mobile nav, terminal animation, Gillbert chatbot |
+| `incident.html` | Fake incident report: 17 agents leave the pond and do fish stuff |
+| `report.css` | Styles for the incident report (charts, timeline, tables) |
+| `assets/guppy-incident-report.pdf` | PDF of the incident report, printed from `incident.html` (regenerate after editing it) |
 | `404.html` | "This page got away." |
 | `assets/` | Hand-drawn SVG mascot, logo, and Open Graph image |
 | `CNAME` | Custom domain for GitHub Pages |
@@ -31,6 +34,13 @@ python3 -m http.server 8000
 ```
 
 Then open http://localhost:8000.
+
+To regenerate the incident report PDF after editing `incident.html`, with the local server running:
+
+```bash
+"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --no-pdf-header-footer \
+  --print-to-pdf=assets/guppy-incident-report.pdf http://localhost:8000/incident.html
+```
 
 ## Support
 

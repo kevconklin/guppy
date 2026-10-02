@@ -102,6 +102,11 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .btn-outline { background: var(--white); color: var(--ink); }
 .btn-outline:hover { background: var(--orange-soft); color: var(--ink); }
 
+/* ---------- Announcement bar ---------- */
+.announce { display: block; background: var(--ink); color: var(--white); text-align: center; font-size: 14px; padding: 9px 16px; text-decoration: none; }
+.announce b { color: var(--orange); font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; margin-right: 8px; }
+.announce:hover { color: var(--white); text-decoration: underline; }
+
 /* ---------- Header / nav ---------- */
 .site-header {
   position: sticky;

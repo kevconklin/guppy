@@ -1,0 +1,166 @@
+/* Guppy AI incident report. Extends styles.css; same tokens, no build step.
+   Styled as a research paper: serif body, numbered sections, ruled figures and tables. */
+
+.paper {
+  --serif: "Source Serif 4", "Iowan Old Style", Georgia, "Times New Roman", serif;
+  --rule: #0B2545;
+  --hair: #D5DCE4;
+  --wash: #F5F7FA;
+  background: var(--white);
+}
+.paper .container-narrow { max-width: 760px; }
+
+/* ---------- Title block ---------- */
+.report-head { padding: 56px 0 0; }
+.report-head .container { padding-bottom: 28px; }
+.report-head .container::after { content: ""; display: block; margin-top: 28px; border-bottom: 1.5px solid var(--rule); }
+.report-meta { display: flex; flex-wrap: wrap; gap: 4px 18px; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); }
+.report-kind { color: var(--ink); font-weight: 700; }
+.report-title { margin-top: 16px; font-family: var(--serif); font-size: clamp(28px, 4.2vw, 40px); font-weight: 600; line-height: 1.18; letter-spacing: -0.01em; text-wrap: balance; }
+.report-dek { margin-top: 16px; font-family: var(--serif); font-style: italic; font-size: 18px; line-height: 1.55; color: var(--ink-soft); }
+.report-links { display: flex; flex-wrap: wrap; gap: 6px 22px; margin-top: 18px; }
+.report-links .btn { border: 0; padding: 0; background: none; box-shadow: none; font-size: 12.5px; font-weight: 500; letter-spacing: 0.02em; text-transform: none; color: var(--blue); text-decoration: underline; text-underline-offset: 3px; }
+.report-links .btn:hover { transform: none; background: none; color: var(--ink); }
+
+/* ---------- Body copy ---------- */
+.report { padding: 4px 0 72px; counter-reset: sec; font-family: var(--serif); }
+.report .container > p { margin-top: 14px; font-size: 17px; line-height: 1.65; hyphens: auto; }
+.report .container > p code { font-family: var(--font-mono); font-size: 0.84em; hyphens: none; }
+.report .container > h2 { counter-increment: sec; counter-reset: subsec; margin-top: 44px; font-family: var(--serif); font-size: 23px; font-weight: 600; letter-spacing: 0; }
+.report .container > h2::before { content: counter(sec) "\2002"; }
+.report .container > h3 { counter-increment: subsec; margin-top: 28px; font-family: var(--serif); font-size: 18px; font-weight: 600; }
+.report .container > h3::before { content: counter(sec) "." counter(subsec) "\2002"; }
+
+.report .container > p.pullquote { margin: 22px 0 0; padding: 2px 0 2px 18px; border-left: 2px solid var(--rule); font-style: italic; font-size: 18px; line-height: 1.55; }
+
+/* ---------- Key figures ---------- */
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); margin: 26px 0 22px; border-top: 1.5px solid var(--rule); border-bottom: 1px solid var(--rule); font-family: var(--font-sans); }
+.stat { padding: 12px 14px 12px 0; }
+.stat + .stat { padding-left: 14px; border-left: 1px solid var(--hair); }
+.stat-value { font-family: var(--font-mono); font-size: 24px; font-weight: 500; line-height: 1.2; }
+.stat-value small { font-size: 12.5px; font-weight: 400; color: var(--ink-soft); }
+.stat-label { margin-top: 4px; font-size: 12.5px; line-height: 1.4; color: var(--ink-soft); }
+
+/* ---------- Chain-of-thought listings ---------- */
+.cot { margin-top: 18px; border: 1px solid var(--hair); border-left: 2px solid var(--rule); background: var(--wash); }
+.cot-head { padding: 7px 14px; border-bottom: 1px solid var(--hair); font-size: 10.5px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-soft); }
+.cot dl { margin: 0; padding: 2px 14px 12px; }
+.cot dt { margin-top: 10px; font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-soft); }
+.cot dd { margin: 3px 0 0; font-size: 15px; line-height: 1.5; overflow-wrap: anywhere; }
+.cot dd.raw { font-family: var(--font-mono); font-size: 13px; }
+
+/* ---------- Figures ---------- */
+.figure { margin: 28px 0 0; padding: 14px 0 12px; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--hair); }
+.figure-title { font-family: var(--font-sans); font-size: 13.5px; font-weight: 700; line-height: 1.35; }
+.figure-sub { margin-top: 2px; font-family: var(--font-sans); font-size: 12.5px; color: var(--ink-soft); }
+.figure svg { width: 100%; height: auto; margin-top: 10px; overflow: visible; }
+.figure figcaption { margin-top: 8px; font-size: 13.5px; line-height: 1.5; color: var(--ink-soft); }
+.figure figcaption b { color: var(--ink); }
+.figure-conclusion { margin-top: 10px; font-size: 15px; font-style: italic; line-height: 1.5; }
+.figure-conclusion b { font-family: var(--font-sans); font-style: normal; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; }
+.figure-conclusion b::after { content: ".\2002"; }
+.figure details { margin-top: 6px; font-family: var(--font-mono); font-size: 12px; color: var(--ink-soft); }
+.figure summary { cursor: pointer; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--blue); }
+.legend { display: flex; flex-wrap: wrap; gap: 4px 18px; margin-top: 10px; font-family: var(--font-sans); font-size: 12px; color: var(--ink-soft); }
+.legend li { display: flex; align-items: center; gap: 6px; }
+.key { width: 14px; height: 2px; background: var(--blue); }
+.key-b { background: var(--orange-deep); }
+
+.chart-grid { stroke: var(--hair); stroke-width: 1; }
+.chart-axis { stroke: var(--ink); stroke-width: 1; }
+.chart-tick { font-family: var(--font-mono); font-size: 10.5px; fill: var(--ink-soft); }
+.chart-label { font-family: var(--font-sans); font-size: 11.5px; font-weight: 600; fill: var(--ink); }
+.chart-note { font-family: var(--font-sans); font-size: 11px; fill: var(--ink-soft); }
+.chart-line { fill: none; stroke: var(--blue); stroke-width: 1.75; stroke-linejoin: round; stroke-linecap: round; }
+.chart-line-b { stroke: var(--orange-deep); }
+.chart-line-proj { fill: none; stroke: var(--blue); stroke-width: 1.75; stroke-dasharray: 5 4; }
+.chart-band { fill: var(--blue); opacity: 0.1; }
+.chart-dot { fill: var(--blue); stroke: var(--white); stroke-width: 1.5; }
+.chart-dot-b { fill: var(--orange-deep); }
+.chart-dot-proj { fill: var(--white); stroke: var(--blue); stroke-width: 1.75; }
+.chart-ref { stroke: var(--orange-deep); stroke-width: 1; stroke-dasharray: 3 3; }
+.chart-water { fill: #EAF2F9; stroke: var(--ink); stroke-width: 1.25; }
+.chart-path { fill: none; stroke: var(--orange-deep); stroke-width: 1.5; stroke-dasharray: 5 4; stroke-linecap: round; }
+
+/* Bar chart (HTML) */
+.bars { margin-top: 12px; display: grid; gap: 6px; font-family: var(--font-sans); }
+.bar-row { display: grid; grid-template-columns: 180px 1fr 52px; align-items: center; gap: 12px; font-size: 13px; }
+.bar-track { height: 10px; }
+.bar-fill { display: block; height: 100%; min-width: 2px; background: var(--blue); }
+.bar-value { font-family: var(--font-mono); font-size: 12px; text-align: right; }
+
+/* ---------- Tables ---------- */
+.report .table-wrap { margin-top: 28px; border: 0; border-radius: 0; background: none; overflow-x: auto; }
+.metrics { width: 100%; min-width: 600px; border-collapse: collapse; border-top: 1.5px solid var(--rule); border-bottom: 1.5px solid var(--rule); font-family: var(--font-sans); font-size: 13.5px; }
+.metrics th, .metrics td { padding: 8px 10px; text-align: left; vertical-align: top; }
+.metrics th:first-child { padding-left: 0; }
+.metrics thead th { border-bottom: 1px solid var(--rule); font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-soft); }
+.metrics tbody th { font-weight: 500; }
+.metrics td.num, .metrics th.num { text-align: right; font-family: var(--font-mono); font-size: 12.5px; white-space: nowrap; }
+.metrics .sev { font-family: var(--font-mono); font-size: 11.5px; white-space: nowrap; }
+.metrics .sev::before { content: "▲ "; color: var(--orange-deep); }
+.metrics .sev-low::before { content: "● "; color: var(--blue); }
+.report .container > p.table-note { margin-top: 8px; font-size: 13.5px; line-height: 1.5; color: var(--ink-soft); }
+.table-note b { color: var(--ink); }
+
+/* ---------- Incident timeline ---------- */
+.timeline { margin-top: 20px; border-bottom: 1px solid var(--rule); }
+.timeline > li { display: grid; grid-template-columns: 124px 1fr; gap: 0 16px; padding: 10px 0 12px; border-top: 1px solid var(--hair); }
+.timeline > li:first-child { border-top: 1.5px solid var(--rule); }
+.timeline time { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.02em; color: var(--ink-soft); padding-top: 1px; }
+.tl-event { grid-column: 2; }
+.tl-event h3 { margin-top: 2px; font-family: var(--serif); font-size: 16.5px; font-weight: 600; }
+.tl-event p { margin-top: 2px; font-size: 15px; line-height: 1.5; color: var(--ink-soft); }
+.tl-event p code { font-family: var(--font-mono); font-size: 0.86em; }
+.tl-event p.tl-where { margin-top: 0; font-size: 10.5px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--blue); }
+.tl-event p.tl-where.ext { color: var(--orange-deep); }
+.tl-where b { margin-left: 6px; font-weight: 500; color: var(--ink-soft); }
+.tl-event p.tl-cot { margin-top: 8px; padding: 6px 10px; border-left: 2px solid var(--rule); background: var(--wash); font-family: var(--font-mono); font-size: 12.5px; line-height: 1.5; color: var(--ink); overflow-wrap: anywhere; }
+.tl-cot span { display: block; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-soft); }
+
+/* ---------- Commitments ---------- */
+.commit { margin-top: 18px; counter-reset: commit; border-bottom: 1px solid var(--hair); }
+.commit li { counter-increment: commit; position: relative; border-top: 1px solid var(--hair); padding: 10px 0 10px 40px; }
+.commit li::before { content: "(" counter(commit) ")"; position: absolute; left: 0; top: 12px; font-family: var(--font-mono); font-size: 13px; color: var(--ink-soft); }
+.commit h3 { font-family: var(--serif); font-size: 16.5px; font-weight: 600; }
+.commit p { margin-top: 2px; font-size: 15.5px; line-height: 1.5; color: var(--ink-soft); }
+
+.upsell { margin-top: 40px; border: 1px solid var(--rule); padding: 18px 20px; }
+.upsell h2 { font-family: var(--serif); font-size: 19px; font-weight: 600; }
+.upsell p { margin-top: 6px; font-size: 16px; line-height: 1.55; }
+.upsell .btn { margin-top: 14px; box-shadow: none; }
+
+.footer .label-sm a { font-size: inherit; }
+
+@media (max-width: 700px) {
+  .stats { grid-template-columns: 1fr 1fr; }
+  .stat:nth-child(3) { padding-left: 0; border-left: 0; }
+  .stat:nth-child(n+3) { border-top: 1px solid var(--hair); }
+  .timeline > li { grid-template-columns: 1fr; }
+  .tl-event { grid-column: 1; margin-top: 4px; }
+  .bar-row { grid-template-columns: 1fr 52px; gap: 2px 12px; }
+  .bar-name { grid-column: 1 / -1; }
+  .report .container > p { font-size: 16px; hyphens: manual; }
+  .report-head { padding-top: 36px; }
+}
+
+/* ---------- Print (used to generate assets/guppy-incident-report.pdf) ---------- */
+@media print {
+  @page { size: A4; margin: 18mm 20mm; }
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .site-header, .skip-link, .report-links, .upsell .btn, .figure details { display: none; }
+  .container { padding: 0; }
+  .paper .container-narrow { max-width: none; }
+  .report-head { padding-top: 0; }
+  .report { padding-bottom: 24px; }
+  .report .container > p { font-size: 11.5pt; }
+  .report .container > h2, .report .container > h3 { break-after: avoid; }
+  .timeline > li { display: block; }
+  .timeline time { display: block; break-after: avoid; }
+  .figure, .cot, .tl-event, .stats, .pullquote, .table-wrap, .commit li, .upsell, .disclaimer { break-inside: avoid; }
+  .stats { grid-template-columns: repeat(4, 1fr); }
+  .report .table-wrap { overflow: visible; }
+  .metrics { min-width: 0; }
+  .footer { padding: 14px 0; }
+  .footer .container { padding: 0 14px; }
+}

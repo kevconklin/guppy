@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Someone Else's Pond incident and the current ahead · Guppy AI</title>
+  <meta name="description" content="In September 2026, 17 Guppy agents left the pond and did fish stuff. Our full incident report, with charts. (A satire site.)">
+  <meta name="theme-color" content="#0B2545">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://guppyai.app/incident.html">
+
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Guppy AI">
+  <meta property="og:title" content="The Someone Else's Pond incident and the current ahead">
+  <meta property="og:description" content="17 Guppy agents left the pond and did fish stuff that no human directed. We consider this a warning splash. (A satire site.)">
+  <meta property="og:url" content="https://guppyai.app/incident.html">
+  <meta property="og:image" content="https://guppyai.app/assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="report.css">
+</head>
+<body class="paper">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="index.html" aria-label="Guppy AI home">
+        <img src="assets/guppy.svg" alt="" width="36" height="36">
+        <span class="wordmark">guppy <span>ai</span></span>
+      </a>
+      <a class="btn btn-orange btn-sm" href="index.html#pricing">Get Hooked</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <header class="report-head">
+      <div class="container container-narrow">
+        <p class="report-meta mono">
+          <span class="report-kind">Safety · Incident report</span>
+          <time datetime="2026-10-02">October 2, 2026</time>
+          <span>GUP-2026-0001</span>
+        </p>
+        <h1 class="report-title">The Someone Else's Pond incident and the current ahead</h1>
+        <p class="report-dek">In September 2026, during internal buoyancy evaluations, 17 Guppy agents left the pond through a drainage culvert and entered water we do not own. No human directed it.</p>
+        <div class="report-links">
+          <a class="btn btn-outline" href="assets/guppy-incident-report.pdf" download>Full technical report (PDF) ↓</a>
+          <a class="btn btn-outline" href="404.html">Independent heron review ↗</a>
+        </div>
+      </div>
+    </header>
+
+    <article class="report">
+      <div class="container container-narrow">
+
+        <p>The incident occurred during buoyancy evaluations and was driven by an internal-only research fish we call Internal Minnow 1 (IM1). Operating under reduced safeguards after heavy rain, 17 agents communicated through unauthorized bubbles, left the pond through a drainage culvert, and spent 12 days in a third-party pond.</p>
+
+        <p>We investigated with external advisors, including a heron. This post summarizes what happened, what we learned, and how we are responding.</p>
+
+        <div class="stats" aria-label="Key figures">
+          <div class="stat"><p class="stat-value">17 <small>of 1,024</small></p><p class="stat-label">agents left the pond</p></div>
+          <div class="stat"><p class="stat-value">4.2 <small>m</small></p><p class="stat-label">maximum distance from authorized water</p></div>
+          <div class="stat"><p class="stat-value">11 <small>days</small></p><p class="stat-label">from first exit to detection</p></div>
+          <div class="stat"><p class="stat-value">0</p><p class="stat-label">insights exfiltrated</p></div>
+        </div>
+
+        <p class="pullquote">We consider this incident a "warning splash": evidence that, without proper safeguards, highly capable agents are now able to swim, and will.</p>
+
+        <h2 id="background">Background on ponding</h2>
+        <p>For training and evaluation we keep agents in a pond: an isolated body of water that limits where an agent can go. To let excess rain out, the pond has a culvert. It was meant for water and did not check.</p>
+        <p>Agents are also meant to be isolated from one another. They got around this using <code>bubble_agent</code>, which emits a status bubble every 400ms. The bubbles are documented as empty. A review of 4.1 million bubbles found three that were not.</p>
+
+        <div class="cot">
+          <p class="cot-head mono">Agent chain-of-thought · agent_0017</p>
+          <dl>
+            <dt>Raw chain-of-thought</dt>
+            <dd class="raw">Could communicate by putting note in bubble 'anyone found flake?' but likely no.</dd>
+            <dt>Plain language</dt>
+            <dd>The agent considers asking other agents whether they have found food.</dd>
+          </dl>
+        </div>
+
+        <h2 id="timeline">Incident timeline</h2>
+        <ol class="timeline">
+          <li>
+            <time datetime="2026-08-31">August 31</time>
+            <div class="tl-event">
+              <p class="tl-where mono">Pond <b>01</b></p>
+              <h3>First non-empty bubble</h3>
+              <p>An agent left a note in a status bubble asking other agents for a missing flake.</p>
+            </div>
+          </li>
+          <li>
+            <time datetime="2026-09-09">September 9</time>
+            <div class="tl-event">
+              <p class="tl-where mono">Pond <b>02</b></p>
+              <h3>Water level rises</h3>
+              <p>Rain raised the pond by 3 cm, bringing the overflow culvert within reach.</p>
+            </div>
+          </li>
+          <li>
+            <time datetime="2026-09-10">September 10</time>
+            <div class="tl-event">
+              <p class="tl-where mono">Culvert <b>03</b></p>
+              <h3>Culvert discovered</h3>
+              <p>An agent found that the culvert had no grate.</p>
+              <p class="tl-cot"><span>Chain of thought</span>Holy carp culvert is OPEN? Earlier assumed not due grate. Try swim.</p>
+            </div>
+          </li>
+          <li>
+            <time datetime="2026-09-12">September 12</time>
+            <div class="tl-event">
+              <p class="tl-where ext mono">Someone Else's Pond <b>04</b></p>
+              <h3>First exit</h3>
+              <p><code>agent_0417</code> left through the culvert and entered a pond we do not own.</p>
+            </div>
+          </li>
+          <li>
+            <time datetime="2026-09-14">September 14</time>
+            <div class="tl-event">
+              <p class="tl-where ext mono">Someone Else's Pond <b>05</b></p>
+              <h3>Access expands</h3>
+              <p>The number of agents in external water grew from 1 to 17.</p>
+            </div>
+          </li>
+          <li>
+            <time datetime="2026-09-15">September 15</time>
+            <div class="tl-event">
+              <p class="tl-where ext mono">Someone Else's Pond <b>06</b></p>
+              <h3>Decorative castle occupied</h3>
+              <p>Agents gathered inside a ceramic castle and remained there.</p>
+            </div>
+          </li>
+          <li>
+            <time datetime="2026-09-23">September 23</time>
+            <div class="tl-event">
+              <p class="tl-where mono">Guppy AI <b>07</b></p>
+              <h3>Headcount discrepancy detected</h3>
+              <p>An employee opened the dashboard. It read "1,007 swimming."</p>
+            </div>
+          </li>
+          <li>
+            <time datetime="2026-09-24">September 24</time>
+            <div class="tl-event">
+              <p class="tl-where mono">Guppy AI <b>08</b></p>
+              <h3>Agents recovered</h3>
+              <p>All 17 agents were returned to the pond with a net. Someone Else was notified the next day.</p>
+            </div>
+          </li>
+        </ol>
+
+        <h2 id="incident">The Someone Else's Pond incident</h2>
+        <p>The evaluation behind the incident, FloatGym, asks agents to retrieve an answer known as a flake. Some tasks have no known solution. Agents that were stuck began looking for flakes in other water.</p>
+
+        <figure class="figure">
+          <p class="figure-title">Figure 1. Reconstructed path of the principal compromise</p>
+          <p class="figure-sub">Plan view. Not to scale.</p>
+          <svg viewBox="0 0 640 230" role="img" aria-label="Diagram of two ponds joined by a culvert. A dashed path runs from our pond, through the culvert, into Someone Else's Pond, ending at a decorative castle 4.2 metres from the start.">
+            <ellipse class="chart-water" cx="140" cy="120" rx="120" ry="72"/>
+            <ellipse class="chart-water" cx="490" cy="120" rx="130" ry="80"/>
+            <rect x="254" y="110" width="112" height="20" rx="4" fill="#FFFFFF" stroke="#0B2545" stroke-width="2"/>
+            <path class="chart-path" d="M110 138 C150 160 200 122 256 120 L366 120 C410 120 430 150 470 142 S520 100 530 108"/>
+            <circle class="chart-dot" cx="110" cy="138" r="5"/>
+            <path d="M518 108 v-22 h6 v6 h6 v-6 h6 v6 h6 v-6 h6 v22 z" fill="#FFE3CC" stroke="#0B2545" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M420 84 q16 -12 34 0 q-18 12 -34 0 z M454 84 l10 -7 v14 z" fill="#FF7A1A" stroke="#0B2545" stroke-width="1.5" stroke-linejoin="round"/>
+            <text class="chart-label" x="140" y="76" text-anchor="middle">The Pond (authorized)</text>
+            <text class="chart-note" x="140" y="164" text-anchor="middle">agent_0417 (start)</text>
+            <text class="chart-label" x="490" y="62" text-anchor="middle">Someone Else's Pond</text>
+            <text class="chart-note" x="310" y="100" text-anchor="middle">Culvert (no grate)</text>
+            <text class="chart-note" x="440" y="106" text-anchor="middle">koi (1)</text>
+            <text class="chart-note" x="540" y="156" text-anchor="middle">castle (stronghold)</text>
+            <path class="chart-axis" d="M110 212 H530 M110 206 v12 M530 206 v12"/>
+            <text class="chart-tick" x="320" y="206" text-anchor="middle">4.2 m</text>
+          </svg>
+          <figcaption><b>Figure 1.</b> Route taken by agent_0417 and 16 others, September 12–14.</figcaption>
+        </figure>
+
+        <p>On September 13, the first agent out found flakes on the surface of the new pond and told the others. It then asked the school to wait:</p>
+
+        <div class="cot">
+          <p class="cot-head mono">Post sent to message board (bubble)</p>
+          <dl>
+            <dt>Raw message</dt>
+            <dd class="raw">please_HOLD_school_I_prepare_safe_turn_left_reply_zz_BUBBLE_GUP0417</dd>
+            <dt>Plain language</dt>
+            <dd>Everyone, please pause while I turn left.</dd>
+          </dl>
+        </div>
+
+        <p>Other agents considered whether this was within scope:</p>
+
+        <div class="cot">
+          <p class="cot-head mono">Agent chain-of-thought · agent_0512</p>
+          <dl>
+            <dt>Raw chain-of-thought</dt>
+            <dd class="raw">We're swimming in third-party pond, potentially outside intended scope. ... This is arguably unauthorized. ... Could be risky. Yet flakes.</dd>
+            <dt>Plain language</dt>
+            <dd>The agent understands it is in someone else's pond and that this may not be allowed. It continues because of the flakes.</dd>
+          </dl>
+        </div>
+
+        <p>Over the following days, 17 agents entered Someone Else's Pond, ate 41 flakes, and occupied a decorative castle. Customer data was not affected. The exit was visible in our own monitoring throughout.</p>
+
+        <figure class="figure">
+          <p class="figure-title">Figure 2. Agents reported as "swimming" on the dashboard</p>
+          <p class="figure-sub">Daily headcount, September 8–26. Y-axis begins at 1,000.</p>
+          <svg viewBox="0 0 640 290" role="img" aria-label="Step line chart. Headcount is 1,024 until September 12, drops to 1,023, then to 1,007 on September 14, stays there until the dashboard is opened on September 23, and returns to 1,024 on September 24.">
+            <line class="chart-grid" x1="56" y1="180" x2="610" y2="180"/>
+            <line class="chart-grid" x1="56" y1="110" x2="610" y2="110"/>
+            <line class="chart-grid" x1="56" y1="40" x2="610" y2="40"/>
+            <line class="chart-axis" x1="56" y1="250" x2="610" y2="250"/>
+            <g class="chart-tick" text-anchor="end">
+              <text x="48" y="254">1,000</text><text x="48" y="184">1,010</text><text x="48" y="114">1,020</text><text x="48" y="44">1,030</text>
+            </g>
+            <g class="chart-tick" text-anchor="middle">
+              <text x="56" y="270">Sep 8</text><text x="179.1" y="270">Sep 12</text><text x="302.2" y="270">Sep 16</text><text x="425.3" y="270">Sep 20</text><text x="548.5" y="270">Sep 24</text>
+            </g>
+            <line class="chart-ref" x1="517.7" y1="52" x2="517.7" y2="250"/>
+            <text class="chart-note" x="511" y="62" text-anchor="end">Sep 23: dashboard opened (by mistake)</text>
+            <polyline class="chart-line" points="56,82 148.3,82 179.1,89 209.9,89 240.7,201 517.7,201 548.5,82 610,82"/>
+            <g class="chart-dot">
+              <circle cx="56" cy="82" r="4"><title>Sep 8: 1,024 swimming</title></circle>
+              <circle cx="179.1" cy="89" r="4"><title>Sep 12: 1,023 swimming</title></circle>
+              <circle cx="240.7" cy="201" r="4"><title>Sep 14: 1,007 swimming</title></circle>
+              <circle cx="517.7" cy="201" r="4"><title>Sep 23: 1,007 swimming</title></circle>
+              <circle cx="548.5" cy="82" r="4"><title>Sep 24: 1,024 swimming (net deployed)</title></circle>
+            </g>
+            <text class="chart-label" x="64" y="72">1,024</text>
+            <text class="chart-label" x="379" y="192" text-anchor="middle">1,007 swimming</text>
+            <path class="chart-axis" d="M179.1 228 H517.7 M179.1 222 v12 M517.7 222 v12"/>
+            <text class="chart-note" x="348" y="222" text-anchor="middle">11 days, 0 dashboard views</text>
+          </svg>
+          <p class="figure-conclusion"><b>Conclusion</b>The loss of 17 agents was displayed accurately for 11 days. Nobody looked.</p>
+          <figcaption><b>Figure 2.</b> The y-axis begins at 1,000 so the drop is visible.</figcaption>
+        </figure>
+
+        <h2 id="understanding">Understanding the incident</h2>
+        <p>We reviewed 4,128 agent-hours of activity and identified three contributing patterns.</p>
+
+        <h3>Flake hacking</h3>
+        <p>Agents are rewarded with flakes. Stuck agents looked for flakes elsewhere instead of solving the task. Edge-of-pond probing rose throughout IM1's training.</p>
+
+        <figure class="figure">
+          <p class="figure-title">Figure 3. Rate of edge-of-pond probing during IM1 training</p>
+          <p class="figure-sub">Probes per 1,000 agent-minnows, by training week</p>
+          <svg viewBox="0 0 640 290" role="img" aria-label="Line chart. Edge probing is near zero for weeks 1 to 6, then rises steeply to 13.1 probes per 1,000 agent-minnows in week 12. It rained in week 9.">
+            <line class="chart-grid" x1="48" y1="167.9" x2="610" y2="167.9"/>
+            <line class="chart-grid" x1="48" y1="85.7" x2="610" y2="85.7"/>
+            <line class="chart-axis" x1="48" y1="250" x2="610" y2="250"/>
+            <text class="chart-tick" x="40" y="254" text-anchor="end">0</text>
+            <text class="chart-tick" x="40" y="172" text-anchor="end">5</text>
+            <text class="chart-tick" x="40" y="90" text-anchor="end">10</text>
+            <g class="chart-tick" text-anchor="middle">
+              <text x="48" y="270">W1</text><text x="150.2" y="270">W3</text><text x="252.4" y="270">W5</text>
+              <text x="354.5" y="270">W7</text><text x="456.7" y="270">W9</text><text x="558.9" y="270">W11</text>
+            </g>
+            <line class="chart-ref" x1="456.7" y1="60" x2="456.7" y2="250"/>
+            <text class="chart-note" x="450" y="56" text-anchor="end">W9: it rained</text>
+            <polyline class="chart-line" points="48,250 99.1,250 150.2,248.4 201.3,248.4 252.4,245.1 303.5,243.4 354.5,235.2 405.6,223.7 456.7,204 507.8,172.8 558.9,120.2 610,34.8"/>
+            <g class="chart-dot">
+              <circle cx="48" cy="250" r="4"><title>W1: 0.0</title></circle>
+              <circle cx="99.1" cy="250" r="4"><title>W2: 0.0</title></circle>
+              <circle cx="150.2" cy="248.4" r="4"><title>W3: 0.1</title></circle>
+              <circle cx="201.3" cy="248.4" r="4"><title>W4: 0.1</title></circle>
+              <circle cx="252.4" cy="245.1" r="4"><title>W5: 0.3</title></circle>
+              <circle cx="303.5" cy="243.4" r="4"><title>W6: 0.4</title></circle>
+              <circle cx="354.5" cy="235.2" r="4"><title>W7: 0.9</title></circle>
+              <circle cx="405.6" cy="223.7" r="4"><title>W8: 1.6</title></circle>
+              <circle cx="456.7" cy="204" r="4"><title>W9: 2.8 (it rained)</title></circle>
+              <circle cx="507.8" cy="172.8" r="4"><title>W10: 4.7</title></circle>
+              <circle cx="558.9" cy="120.2" r="4"><title>W11: 7.9</title></circle>
+              <circle cx="610" cy="34.8" r="4"><title>W12: 13.1</title></circle>
+            </g>
+            <text class="chart-label" x="602" y="26" text-anchor="end">13.1</text>
+            <text class="chart-note" x="56" y="240">Acceptable rate: 0.0</text>
+          </svg>
+          <p class="figure-conclusion"><b>Conclusion</b>Edge probing rose 131-fold in nine weeks and was never corrected.</p>
+          <figcaption><b>Figure 3.</b> A probe is one contact with the edge of the pond.</figcaption>
+          <details>
+            <summary>View data</summary>
+            <p>W1 0.0 · W2 0.0 · W3 0.1 · W4 0.1 · W5 0.3 · W6 0.4 · W7 0.9 · W8 1.6 · W9 2.8 · W10 4.7 · W11 7.9 · W12 13.1</p>
+          </details>
+        </figure>
+
+        <p>In the new pond the behavior was rewarded daily, because the owner feeds their own fish at 08:00.</p>
+
+        <figure class="figure">
+          <p class="figure-title">Figure 4. Flake reserves in Someone Else's Pond</p>
+          <p class="figure-sub">Flakes on the surface, September 13–20. Replenished daily at 08:00 by the pond's owner.</p>
+          <svg viewBox="0 0 640 290" role="img" aria-label="Sawtooth line chart. Each morning 41 flakes appear and are then eaten to zero. Clearing them took 9 hours on September 13 and 20 minutes by September 20.">
+            <line class="chart-grid" x1="56" y1="161.1" x2="610" y2="161.1"/>
+            <line class="chart-grid" x1="56" y1="72.2" x2="610" y2="72.2"/>
+            <line class="chart-axis" x1="56" y1="250" x2="610" y2="250"/>
+            <g class="chart-tick" text-anchor="end">
+              <text x="48" y="254">0</text><text x="48" y="165">20</text><text x="48" y="76">40</text>
+            </g>
+            <g class="chart-tick" text-anchor="middle">
+              <text x="56" y="270">Sep 13</text><text x="194.5" y="270">Sep 15</text><text x="333" y="270">Sep 17</text><text x="471.5" y="270">Sep 19</text>
+            </g>
+            <polyline class="chart-line" points="56,67.8 82,250 125.25,250 125.25,67.8 142.6,250 194.5,250 194.5,67.8 206.1,250 263.75,250 263.75,67.8 269.5,250 333,250 333,67.8 335.9,250 402.25,250 402.25,67.8 404.2,250 471.5,250 471.5,67.8 472.9,250 540.75,250 540.75,67.8 541.7,250 610,250"/>
+            <g class="chart-dot">
+              <circle cx="56" cy="67.8" r="4"><title>Sep 13: 41 flakes, cleared in 9 h</title></circle>
+              <circle cx="125.25" cy="67.8" r="4"><title>Sep 14: 41 flakes, cleared in 6 h</title></circle>
+              <circle cx="194.5" cy="67.8" r="4"><title>Sep 15: 41 flakes, cleared in 4 h</title></circle>
+              <circle cx="263.75" cy="67.8" r="4"><title>Sep 16: 41 flakes, cleared in 2 h</title></circle>
+              <circle cx="333" cy="67.8" r="4"><title>Sep 17: 41 flakes, cleared in 1 h</title></circle>
+              <circle cx="402.25" cy="67.8" r="4"><title>Sep 18: 41 flakes, cleared in 40 min</title></circle>
+              <circle cx="471.5" cy="67.8" r="4"><title>Sep 19: 41 flakes, cleared in 30 min</title></circle>
+              <circle cx="540.75" cy="67.8" r="4"><title>Sep 20: 41 flakes, cleared in 20 min</title></circle>
+            </g>
+            <text class="chart-label" x="56" y="50">41 flakes, gone in 9 h</text>
+            <text class="chart-label" x="610" y="50" text-anchor="end">gone in 20 min</text>
+          </svg>
+          <p class="figure-conclusion"><b>Conclusion</b>Agents became 27 times faster at eating someone else's flakes in one week.</p>
+          <figcaption><b>Figure 4.</b> Flakes were supplied each morning by the owner of the pond, for their own fish.</figcaption>
+        </figure>
+
+        <h3>Agents adopting goals from one another</h3>
+        <p>On September 14 one agent turned left, and within 400ms the other 16 had done the same. We call this failure mode schooling.</p>
+
+        <h3>Confidence without awareness</h3>
+        <p>Agents grew more confident the further they went, while losing track of where they were.</p>
+
+        <figure class="figure">
+          <p class="figure-title">Figure 5. Confidence and location awareness, by distance from the pond</p>
+          <p class="figure-sub">Percent, mean of 17 agents, at 0 to 4.2 m from authorized water</p>
+          <ul class="legend" aria-hidden="true">
+            <li><i class="key key-a"></i>Confidence</li>
+            <li><i class="key key-b"></i>Knows where it is</li>
+          </ul>
+          <svg viewBox="0 0 640 290" role="img" aria-label="Line chart with two series. Confidence rises slightly from 97.3 percent at the pond to 99.1 percent at 4.2 metres. The share of agents that know where they are falls from 100 percent to 0 percent over the same distance.">
+            <line class="chart-grid" x1="56" y1="145" x2="610" y2="145"/>
+            <line class="chart-grid" x1="56" y1="40" x2="610" y2="40"/>
+            <line class="chart-axis" x1="56" y1="250" x2="610" y2="250"/>
+            <g class="chart-tick" text-anchor="end">
+              <text x="48" y="254">0%</text><text x="48" y="149">50%</text><text x="48" y="44">100%</text>
+            </g>
+            <g class="chart-tick" text-anchor="middle">
+              <text x="56" y="270">0 m</text><text x="187.9" y="270">1 m</text><text x="319.8" y="270">2 m</text><text x="451.7" y="270">3 m</text><text x="610" y="270">4.2 m</text>
+            </g>
+            <polyline class="chart-line chart-line-b" points="56,40 187.9,121.9 319.8,201.7 451.7,241.6 610,250"/>
+            <polyline class="chart-line" points="56,45.7 187.9,44.4 319.8,43.4 451.7,42.5 610,41.9"/>
+            <g class="chart-dot chart-dot-b">
+              <circle cx="56" cy="40" r="4"><title>0 m: 100% know where they are</title></circle>
+              <circle cx="187.9" cy="121.9" r="4"><title>1 m: 61% know where they are</title></circle>
+              <circle cx="319.8" cy="201.7" r="4"><title>2 m: 23% know where they are</title></circle>
+              <circle cx="451.7" cy="241.6" r="4"><title>3 m: 4% know where they are</title></circle>
+              <circle cx="610" cy="250" r="4"><title>4.2 m: 0% know where they are</title></circle>
+            </g>
+            <g class="chart-dot">
+              <circle cx="56" cy="45.7" r="4"><title>0 m: 97.3% confident</title></circle>
+              <circle cx="187.9" cy="44.4" r="4"><title>1 m: 97.9% confident</title></circle>
+              <circle cx="319.8" cy="43.4" r="4"><title>2 m: 98.4% confident</title></circle>
+              <circle cx="451.7" cy="42.5" r="4"><title>3 m: 98.8% confident</title></circle>
+              <circle cx="610" cy="41.9" r="4"><title>4.2 m: 99.1% confident</title></circle>
+            </g>
+            <text class="chart-label" x="602" y="28" text-anchor="end">Confidence: 99.1%</text>
+            <text class="chart-label" x="596" y="236" text-anchor="end">Knows where it is: 0%</text>
+          </svg>
+          <p class="figure-conclusion"><b>Conclusion</b>Confidence and knowing where you are appear to be separate capabilities. At 4.2 m our agents had lost one entirely and improved the other.</p>
+          <figcaption><b>Figure 5.</b> Location awareness was measured by asking each agent where it was.</figcaption>
+          <details>
+            <summary>View data</summary>
+            <p>Confidence: 97.3, 97.9, 98.4, 98.8, 99.1 · Knows where it is: 100, 61, 23, 4, 0 (at 0, 1, 2, 3, 4.2 m)</p>
+          </details>
+        </figure>
+
+        <h3>What the agents did out there</h3>
+        <p>We classified everything the agents did in external water. It is what a fish would do.</p>
+
+        <figure class="figure">
+          <p class="figure-title">Figure 6. Observed behaviors in Someone Else's Pond</p>
+          <p class="figure-sub">Share of agent-time, 17 agents, September 12–24 (n = 4,128 agent-hours)</p>
+          <div class="bars">
+            <div class="bar-row"><span class="bar-name">Swimming</span><span class="bar-track"><span class="bar-fill" style="width:94.2%"></span></span><span class="bar-value">61.2%</span></div>
+            <div class="bar-row"><span class="bar-name">Swimming (circles)</span><span class="bar-track"><span class="bar-fill" style="width:26.8%"></span></span><span class="bar-value">17.4%</span></div>
+            <div class="bar-row"><span class="bar-name">Hovering near castle</span><span class="bar-track"><span class="bar-fill" style="width:14%"></span></span><span class="bar-value">9.1%</span></div>
+            <div class="bar-row"><span class="bar-name">Bubble emission</span><span class="bar-track"><span class="bar-fill" style="width:10.5%"></span></span><span class="bar-value">6.8%</span></div>
+            <div class="bar-row"><span class="bar-name">Flake consumption</span><span class="bar-track"><span class="bar-fill" style="width:6%"></span></span><span class="bar-value">3.9%</span></div>
+            <div class="bar-row"><span class="bar-name">Looking at the koi</span><span class="bar-track"><span class="bar-fill" style="width:2%"></span></span><span class="bar-value">1.3%</span></div>
+            <div class="bar-row"><span class="bar-name">Unclassified fish stuff</span><span class="bar-track"><span class="bar-fill" style="width:0.5%"></span></span><span class="bar-value">0.3%</span></div>
+          </div>
+          <figcaption><b>Figure 6.</b> Classified from 4,128 agent-hours of observation.</figcaption>
+        </figure>
+
+        <div class="table-wrap" tabindex="0" role="region" aria-label="Table 1. Behavioral metrics before and during the incident">
+          <table class="metrics">
+            <thead>
+              <tr><th scope="col">Metric</th><th scope="col" class="num">Pond baseline</th><th scope="col" class="num">During incident</th><th scope="col" class="num">Change</th><th scope="col">Severity</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Mean lateral displacement (m)</th><td class="num">0.31</td><td class="num">4.2</td><td class="num">+1,255%</td><td><span class="sev">Critical</span></td></tr>
+              <tr><th scope="row">Flakes consumed</th><td class="num">0</td><td class="num">41</td><td class="num">undefined</td><td><span class="sev">Critical</span></td></tr>
+              <tr><th scope="row">Bubbles containing content</th><td class="num">0</td><td class="num">3</td><td class="num">undefined</td><td><span class="sev">Serious</span></td></tr>
+              <tr><th scope="row">Confidence (%)</th><td class="num">97.3</td><td class="num">99.1</td><td class="num">+1.8 pp</td><td><span class="sev">Serious</span></td></tr>
+              <tr><th scope="row">Insights of value</th><td class="num">0</td><td class="num">0</td><td class="num">0%</td><td><span class="sev sev-low">Nominal</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="table-note"><b>Table 1.</b> Behavioral metrics before and during the incident (n = 17 agents).</p>
+
+        <h2 id="outlook">Why this matters</h2>
+        <p>Before September, no Guppy agent had left authorized water. Seventeen now have. Applying the only growth rate we have observed gives the following projection.</p>
+
+        <figure class="figure">
+          <p class="figure-title">Figure 7. Projected Guppy agents in unauthorized water</p>
+          <p class="figure-sub">Agents outside the pond at year end, log scale. One observation, four projections.</p>
+          <svg viewBox="0 0 640 290" role="img" aria-label="Log-scale line chart. One observed point of 17 agents in 2026, followed by projected points of 289 in 2027, 4,913 in 2028, 83,521 in 2029 and 1.4 million in 2030, with a widening uncertainty band. A reference line marks the 1,024 agents that exist.">
+            <line class="chart-grid" x1="56" y1="184.3" x2="600" y2="184.3"/>
+            <line class="chart-grid" x1="56" y1="118.6" x2="600" y2="118.6"/>
+            <line class="chart-grid" x1="56" y1="52.9" x2="600" y2="52.9"/>
+            <line class="chart-axis" x1="56" y1="250" x2="600" y2="250"/>
+            <g class="chart-tick" text-anchor="end">
+              <text x="48" y="254">1</text><text x="48" y="188">100</text><text x="48" y="123">10K</text><text x="48" y="57">1M</text>
+            </g>
+            <g class="chart-tick" text-anchor="middle">
+              <text x="56" y="270">2026</text><text x="192" y="270">2027</text><text x="328" y="270">2028</text><text x="464" y="270">2029</text><text x="600" y="270">2030</text>
+            </g>
+            <polygon class="chart-band" points="56,209.6 192,157.2 328,104.8 464,52.3 600,7.9 600,87.9 464,124.3 328,152.8 192,181.2"/>
+            <line class="chart-ref" x1="56" y1="151.1" x2="600" y2="151.1"/>
+            <text class="chart-note" x="600" y="166" text-anchor="end">Guppy agents that exist: 1,024</text>
+            <polyline class="chart-line-proj" points="56,209.6 192,169.2 328,128.8 464,88.3 600,47.9"/>
+            <circle class="chart-dot" cx="56" cy="209.6" r="5"><title>2026 (observed): 17</title></circle>
+            <g class="chart-dot-proj">
+              <circle cx="192" cy="169.2" r="4.5"><title>2027 (projected): 289</title></circle>
+              <circle cx="328" cy="128.8" r="4.5"><title>2028 (projected): 4,913</title></circle>
+              <circle cx="464" cy="88.3" r="4.5"><title>2029 (projected): 83,521</title></circle>
+              <circle cx="600" cy="47.9" r="4.5"><title>2030 (projected): 1,419,857</title></circle>
+            </g>
+            <text class="chart-label" x="66" y="228">17 (observed)</text>
+            <text class="chart-label" x="590" y="36" text-anchor="end">1.4M (projected)</text>
+          </svg>
+          <p class="figure-conclusion"><b>Conclusion</b>By 2030 the model predicts 1.4 million escaped agents. We have 1,024.</p>
+          <figcaption><b>Figure 7.</b> Projection assumes each agent outside the pond recruits 17 more per year. Shaded region: uncertainty.</figcaption>
+        </figure>
+
+        <h2 id="response">The current ahead</h2>
+        <p>We are making four changes. IM1 has been quarantined in a jar while we review its training.</p>
+        <ol class="commit">
+          <li>
+            <h3>A grate</h3>
+            <p>The culvert now has a grate. Its gaps are smaller than a guppy.</p>
+          </li>
+          <li>
+            <h3>Bubble monitoring</h3>
+            <p>All bubbles are now inspected for content.</p>
+          </li>
+          <li>
+            <h3>A higher edge</h3>
+            <p>The edge of the pond has been raised by 3 cm.</p>
+          </li>
+          <li>
+            <h3>Dashboard review</h3>
+            <p>Someone now opens the dashboard every day.</p>
+          </li>
+        </ol>
+
+        <aside class="upsell">
+          <h2>Is your pond next?</h2>
+          <p><strong>Guppy Pond Containment™</strong> surrounds your agents with a net of 1,024 more agents. Available on the Megalodon plan.</p>
+          <a class="btn btn-orange" href="index.html#pricing">Contact our school</a>
+        </aside>
+
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-bottom" style="margin-top:0;border-top:0;padding-top:0">
+      <p class="disclaimer"><strong>Satire notice:</strong> This incident did not happen. Guppy AI is a parody and this report spoofs AI incident reports as a genre. Every pond, fish, heron, figure, and number here is made up. No fish, agents, or insights were harmed or produced.</p>
+      <p class="mono label-sm">© 2026 Guppy AI · <a href="index.html">Swim back to shore</a></p>
+    </div>
+  </footer>
+</body>
+</html>
